@@ -23,3 +23,28 @@ remplazadores = (
         ("ó", "o"),
         ("ú", "u"),
     )
+
+#Definicion de la clase convertidor
+class convertidor:
+  def __inti__(self,p):
+    self.p = p
+    self.x = x
+    self.remplazadores= remplazadores
+  def convertir_a_mayúcula (self):
+    if p.islower(): #Esto lo usamos para comprobar si esta en minúscula
+      return p.upper()
+    else:
+      print (p)
+
+  def detector_caracteres_no_alfanuméricos(self):
+    self.x = ''.join(ch for ch in p if ch.isalnum()) #Podemos utilizar el método isalnum() para comprobar si un carácter o cadena dada es alfanumérico o no. Podemos comparar cada carácter individualmente de una cadena, y si es alfanumérico, lo combinamos usando la función join().
+
+
+    print(self.x)
+
+  def eliminador_acentos(self):
+    for a, b in remplazadores:
+        p = p.replace(a, b).replace(a.upper(), b.upper())
+    return p
+
+
