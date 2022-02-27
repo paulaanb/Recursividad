@@ -5,3 +5,37 @@ Esta sección plantea algunos problemas. Para resolverlos de una manera que lueg
 
 El código es el siguiente:
 
+·Ejercicio 5:
+'''#Definimos la tabla y los valores
+tabla = [1,2,3,4,5,6,7,8]
+n = int(input('Introduzca el valor que desea encontrar:'))
+i = 0
+j = len(tabla)
+m = (i+j)/2
+
+#Definimos la clase a utilizar
+class tablas:
+  def  __init__(self,tabla,n,i,j):
+    self.i= i
+    self.j= j
+    self.n= n
+  
+  def busqueda_numero (self):
+    
+    if self.i > self.j:
+      return'No hay ningún valor en la posición seleccionada'
+      
+    else:
+      self.m = m
+      if tabla[self.m] == n:
+        return self.m
+      elif tabla[self.m] > n:
+        print (busqueda_numero(self))
+        return busqueda_numero (self,self.m -1)
+      else:
+        return busqueda_numero (self, self.m + 1)
+        
+  #Ejecutamos el programa
+  resultado = tablas(tabla,n,j,i)
+  print(resultado.busqueda_numero())'''
+
