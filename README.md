@@ -6,7 +6,9 @@ Esta sección plantea algunos problemas. Para resolverlos de una manera que lueg
 El código es el siguiente:
 
 ·Ejercicio 5:
-'''#Definimos la tabla y los valores
+```
+
+#Definimos la tabla y los valores
 tabla = [1,2,3,4,5,6,7,8]
 n = int(input('Introduzca el valor que desea encontrar:'))
 i = 0
@@ -37,10 +39,11 @@ class tablas:
         
   #Ejecutamos el programa
   resultado = tablas(tabla,n,j,i)
-  print(resultado.busqueda_numero())'''
-
+  print(resultado.busqueda_numero())
+ 
+ 
   ·Ejercicio 6:
-  '''#Instrucciones y clases
+#Instrucciones y clases
 palabra = str(input('Introduzca una palabra:'))
 
 class verificacion:
