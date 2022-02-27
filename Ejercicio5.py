@@ -27,4 +27,6 @@ class tablas:
       else:
         return busqueda_numero (self, self.m + 1)
         
- 
+  #Ejecutamos el programa
+  resultado = tablas(tabla,n,j,i)
+  print(resultado.busqueda_numero())
