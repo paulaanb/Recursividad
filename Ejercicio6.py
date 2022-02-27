@@ -47,4 +47,8 @@ class convertidor:
         p = p.replace(a, b).replace(a.upper(), b.upper())
     return p
 
-
+#Instruciones para el correcto funcionamiento del programa
+resultado2 = convertidor(x, remplazadores, p)
+print(resultado2.convertir_a_mayuscula())
+print(resultado2.detector_caracteres_no_alfanuméricos())
+print(resultado2.eliminador_acentos())
