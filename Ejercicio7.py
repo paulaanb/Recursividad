@@ -31,3 +31,8 @@ def ordenar_colores(tamaño, indice, contador):
     else:
         return bandera
         
+# Codigo para ejecutar el programa
+bandera = crear_bandera()
+print(bandera)
+ordenar_colores(len(bandera), 0, 0)
+print(bandera)
